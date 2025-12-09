@@ -20,7 +20,7 @@
       height: 65px;
       max-width: 100%;
       padding: 0 64px;
-      margin: 0 auto;
+      margin: 0 auto 59px;
       box-sizing: border-box;
     }
 
@@ -76,6 +76,11 @@
     &-card-area {
       position: relative;
       padding: 0 64px;
+    }
+
+    &-card-tit-desc {
+      margin-bottom: 56px;
+      text-align: center;
     }
 
     &-card-list {

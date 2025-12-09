@@ -13,8 +13,9 @@ function Card(){
         <img src={images["card_plus_icon.svg"]} alt="카드 열기" />
       </div>
       <div className="card-item-weaponImage">
-        <img src={images["weapon/AKM.png"]} alt="AKM" />
+        <img src={images["weapon/AKM.png"]} className="weapon-image" alt="AKM" />
       </div>
+      <span className="card-item-weaponName">M16A4</span>
     </button>
   )
 }
