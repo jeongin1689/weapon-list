@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'NotoSansKR';
+  src: url('/src/assets/font/NotoSansKR-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSansKR';
+  src: url('/src/assets/font/NotoSansKR-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSansKR';
+  src: url('/src/assets/font/NotoSansKR-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSansKR';
+  src: url('/src/assets/font/NotoSansKR-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  font-family: 'NotoSansKR', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a,
+h1,
+h2, h3, h4, span, p, strong, 
+em {
+  margin: 0;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: inherit;
+}
+li {
+  list-style: none;
+}
+a:hover,
+span:hover {
+  color: #f2aa00;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+}

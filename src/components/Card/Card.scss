@@ -1,0 +1,13 @@
+.card-item {
+  &-box {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-block-start: 68.635%;
+    padding-inline: 20px;
+    background: url(../../assets/image/card-bg.png) 50% / cover no-repeat;
+    transition: .2s ease-in-out;
+  }
+}
