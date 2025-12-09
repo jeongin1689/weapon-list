@@ -31,7 +31,7 @@ function Layout(){
         </ul>
       </div>
       <div className="weapons-card-area">
-        <p class="weapon-card-tit-desc">돌격소총(AR)은 준수한 데미지와 연사로 다양한 상황에서 상대를 제압할 수 있는 다재다능한 무기입니다.</p>
+        <p className="weapon-card-tit-desc">돌격소총(AR)은 준수한 데미지와 연사로 다양한 상황에서 상대를 제압할 수 있는 다재다능한 무기입니다.</p>
         <ul className="weapons-card-list">
           <li className="weapons-card-list-item">
             <Card></Card>

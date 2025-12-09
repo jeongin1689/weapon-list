@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import "./Header.scss"
 
 const icons = importAllImages(
-  import.meta.glob("/src/assets/image/*", {eager:true})
+  import.meta.glob("/src/assets/image/**/*.{png,jpg,jpeg,svg}", {eager: true,})
 );
 
 const lnbItem = [
@@ -25,24 +25,24 @@ function Header() {
       <div className="header-inner">
         <div className="outline-btn-box">
           <button className="outlink-btn">
-            <img src={icons["outlink_icon.svg"].default} alt="Open outlink layer" />
+            <img src={icons["outlink_icon.svg"]} alt="Open outlink layer" />
           </button>
         </div>
         <h1 className="main-logo-box">
           <Link to="/" className="main-logo">
-            <img src={icons["logo.png"].default} alt="BattleGround Home" />
+            <img src={icons["logo.png"]} alt="BattleGround Home" />
           </Link>
         </h1>
         <div className="header-right-area">
           <div className="local-btn-box">
             <button className="locale-btn">
-              <img src={icons["locale_icon.svg"].default} alt="언어 설정" />
+              <img src={icons["locale_icon.svg"]} alt="언어 설정" />
               <span className="locale">한국어</span>
             </button>
           </div>
           <div className="login-btn-box">
             <button className="login-btn">
-              <img src={icons["login_icon.svg"].default} alt="로그인" />
+              <img src={icons["login_icon.svg"]} alt="로그인" />
               <span className="login">로그인</span>
             </button>
           </div>
