@@ -70,12 +70,27 @@
             }
           }
         }
+
+        &.is-active {
+          a {
+            color: #fff;
+            transition: color 0.2s ease-in-out;
+
+            &::after {
+              transform: scaleX(1);
+            }
+          }
+        }
       }
     }
 
     &-card-area {
       position: relative;
       padding: 0 64px;
+      margin: 0 auto;
+      width: 1648px;
+      max-width: 100%;
+      box-sizing: border-box;
     }
 
     &-card-tit-desc {

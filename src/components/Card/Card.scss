@@ -15,15 +15,19 @@
       background-image: url(../../assets/image/card-bg-hover.png);
 
       .card-item-weaponName {
-        color: #f2aa00;
+        color: #F2AA00;
+      }
+      .card-item-plusIcon {
+        rotate: 90deg;
+        filter: invert(88%) sepia(21%) saturate(1586%) hue-rotate(329deg) brightness(104%) contrast(94%);
       }
     }
   }
 
   &-category {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 10px;
+    left: 10px;
     font-size: 14px;
     font-weight: 500;
     color: #000;
@@ -31,8 +35,9 @@
 
   &-plusIcon {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 15px;
+    right: 15px;
+    transition: all .2s ease-in-out;
   }
 
   &-weaponImage {
