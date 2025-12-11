@@ -1,5 +1,6 @@
 import "./MainLayout.scss"
 import Card from "../Card/Card"
+import Popup from "../Popup/Popup"
 import { useState, useEffect } from "react"
 
 function Layout(){

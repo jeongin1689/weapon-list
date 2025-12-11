@@ -59,8 +59,7 @@ em {
 li {
   list-style: none;
 }
-a:hover,
-span:hover {
+a:hover{
   color: #f2aa00;
 }
 
