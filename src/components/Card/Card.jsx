@@ -14,6 +14,8 @@ function Card({ weaponData, category = "돌격소총" }) {
 
   const imageName = weaponData.itemImage.replace("/image/", "weapon/");
 
+  console.log(images[imageName])
+
   return (
     <button className="card-item-box">
       <span className="card-item-category">{category}</span>
