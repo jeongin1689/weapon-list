@@ -1542,17 +1542,17 @@
           "muzzle": [
             {
               "name": "보정기(SMG)",
-              "image": "/image/weapons-add-on-muzzle-compensator_medium",
+              "image": "/image/weapons-add-on-muzzle-compensator_medium.png",
               "desc": "총기 반동을 크게 줄여주어 조준 제어에 도움을 줍니다."
             },
             {
               "name": "소염기(SMG)",
-              "image": "/image/weapons-add-on-muzzle-flashhider_medium",
+              "image": "/image/weapons-add-on-muzzle-flashhider_medium.png",
               "desc": "총구 화염과 총기 반동이 조금 줄어듭니다."
             },
             {
               "name": "소음기(SMG)",
-              "image": "/image/weapons-add-on-muzzle-suppressor_small",
+              "image": "/image/weapons-add-on-muzzle-suppressor_small.png",
               "desc": "총구 화염이 사라지고, 총성을 줄여줍니다. 지향 사격 정확도가 상승합니다."
             }
           ],
@@ -2082,17 +2082,17 @@
           "muzzle": [
             {
               "name": "보정기(SMG)",
-              "image": "/image/weapons-add-on-muzzle-compensator_medium",
+              "image": "/image/weapons-add-on-muzzle-compensator_medium.png",
               "desc": "총기 반동을 크게 줄여주어 조준 제어에 도움을 줍니다."
             },
             {
               "name": "소염기(SMG)",
-              "image": "/image/weapons-add-on-muzzle-flashhider_medium",
+              "image": "/image/weapons-add-on-muzzle-flashhider_medium.png",
               "desc": "총구 화염과 총기 반동이 조금 줄어듭니다."
             },
             {
               "name": "소음기(SMG)",
-              "image": "/image/weapons-add-on-muzzle-suppressor_small",
+              "image": "/image/weapons-add-on-muzzle-suppressor_small.png",
               "desc": "총구 화염이 사라지고, 총성을 줄여줍니다. 지향 사격 정확도가 상승합니다."
             }
           ],

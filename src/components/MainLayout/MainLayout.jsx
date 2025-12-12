@@ -39,6 +39,22 @@ function Layout(){
   // 기본 값 -> 돌격소총
   const [activeWeapon, setActiveWeapon] = useState("돌격소총");
 
+  // 모달 상태 관리
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedWeapon, setSelectedWeapon] = useState(null);
+
+  // 카드 클릭 핸들러
+  const handleCardClick = (weapon) => {
+    setSelectedWeapon(weapon);
+    setIsModalOpen(true);
+  };
+
+  // 모달 닫기 핸들러
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedWeapon(null);
+  };
+
   function List({data, isActive, onClick}) {
     return (
       <li 
@@ -88,11 +104,24 @@ function Layout(){
         <ul className="weapons-card-list">
             {currentWeapons.map((weapon) => (
               <li className="weapons-card-list-item" key={weapon.itemName}>
-                <Card weaponData={weapon} category={activeWeapon} />
+                <Card 
+                  weaponData={weapon} 
+                  category={activeWeapon} 
+                  onClick={() => handleCardClick(weapon)}
+                />
               </li>
             ))}
         </ul>
       </div>
+
+      {/* 모달이 열려있을 때만 Popup 렌더링 */}
+      {isModalOpen && selectedWeapon && (
+        <Popup 
+          weaponData={selectedWeapon}
+          category={activeWeapon}
+          onClose={handleCloseModal}
+        />
+      )}
     </section>
   )
 }

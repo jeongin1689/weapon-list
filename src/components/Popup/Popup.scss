@@ -74,6 +74,7 @@
       font-weight: 900;
       font-size: 70px;
       color: #000;
+      letter-spacing: -.025em;
     }
     &-bullet {
       display: flex;
@@ -117,6 +118,7 @@
       margin: 0 10px;
       background: url(../../assets/image/modal-gunparts-bg.png) 100% / cover no-repeat;
       padding: 79px 0;
+      overflow: hidden;
       &-box {
         display: flex;
         align-items: center;
@@ -157,7 +159,7 @@
       position: relative;
       width: 368px;
       height: auto;
-      min-height: 160px;
+      height: 165px;
       padding: 46px 32px 38px 32px;
       margin-right: 16px;
       background: url(../../assets/image/gunparts-desc-bg.png) 50% / cover no-repeat;
@@ -245,6 +247,7 @@
   }
 
   &.swiper-button-disabled {
+    display: none;
     svg {
       stroke: transparent;
       fill: transparent;
