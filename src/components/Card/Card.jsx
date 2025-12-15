@@ -9,9 +9,8 @@ function Card({ weaponData, category = "돌격소총", onClick }) {
   if (!weaponData) {
     return null;
   }
-  console.log(category);
+  
   const imageName = weaponData.itemImage.replace("/image/", "weapon/");
-  console.log(images[imageName])
   return (
     <button className="card-item-box" onClick={onClick}>
       <span className="card-item-category">{category}</span>

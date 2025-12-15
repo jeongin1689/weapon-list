@@ -69,12 +69,10 @@ function Layout(){
   const [weaponsData, setWeaponsData] = useState({});
 
   useEffect(() => {
-    fetch('/weapon.json')
+    fetch(import.meta.env.BASE_URL + 'weapon.json')
       .then(response => response.json())
       .then(data => {
         setWeaponsData(data.weapons);
-
-        console.log(data.weapons);
       })
       .catch(error => {
         console.error('weapon.json 로드 실패:', error);
