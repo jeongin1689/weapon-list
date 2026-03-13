@@ -57,8 +57,8 @@ export const Dmr = {
 export const Sg = {
   args: {
     weaponData: {
-      itemName: "S12K",
-      itemImage: "/image/S12K.png",
+      itemName: "S686",
+      itemImage: "/image/S686.png",
     },
     category: "산탄총",
   },
