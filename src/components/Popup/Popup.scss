@@ -17,6 +17,8 @@
     right: 100px;
     width: 34px;
     height: 34px;
+    background-color: transparent;
+    border: none;
   }
   &-content {
     top: 30px;
@@ -68,9 +70,11 @@
         left: 15px;
         white-space: nowrap;
         z-index: 2;
+        color: #fff;
       }
     }
     &-tit {
+      margin: 0;
       font-weight: 900;
       font-size: 70px;
       color: #000;
@@ -129,6 +133,7 @@
       &-tit {
         font-weight: 900;
         font-size: 46px;
+        color: #fff;
       }
       &-list {
         display: flex;
@@ -141,6 +146,7 @@
         color: #444;
         border-radius: 90px;
         cursor: pointer;
+        list-style: none;
 
         &.is-active {
           color: #fff;
