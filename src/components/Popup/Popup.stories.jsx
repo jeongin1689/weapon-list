@@ -30,77 +30,101 @@ const createWeaponData = (overrides = {}) => ({
       {
         image: "/image/556mm.png",
         name: "5.56mm",
-        desc: "5.56mm 탄환",
       },
     ],
-    muzzle: [
+    "muzzle": [
       {
-        image: "/image/weapons-add-on-muzzle-compensator_large.png",
-        name: "보정기",
-        desc: "수직/수평 반동 감소",
+        "name": "보정기",
+        "image": "/image/weapons-add-on-muzzle-compensator_large.png",
+        "desc": "총기 반동을 크게 줄여주어 조준 제어에 도움을 줍니다."
       },
       {
-        image: "/image/weapons-add-on-muzzle-suppressor_large.png",
-        name: "소음기",
-        desc: "총성 감소",
+        "name": "소염기",
+        "image": "/image/weapons-add-on-muzzle-flashhider_large.png",
+        "desc": "총구 화염과 총기 반동이 조금 줄어듭니다."
       },
       {
-        image: "/image/weapons-add-on-muzzle-flashhider_large.png",
-        name: "소염기",
-        desc: "총구 화염 감소",
+        "name": "소음기",
+        "image": "/image/weapons-add-on-muzzle-suppressor_large.png",
+        "desc": "총구 화염이 사라지고, 총성을 줄여줍니다. 지향 사격 정확도가 상승합니다."
       },
+      {
+        "name": "제동기",
+        "image": "/image/weapons-add-on-muzzle-brake_large.png",
+        "desc": "총기 반동과 사격 시 시야 흔들림이 줄어듭니다."
+      }
     ],
     grip: [
       {
-        image: "/image/weapons-add-on-rail-fore_grip.png",
-        name: "수직 손잡이",
-        desc: "수직 반동 감소",
+        "name": "앵글 손잡이",
+        "image": "/image/weapons-add-on-rail-angled_fore_grip.png",
+        "desc": "수평 반동과 호흡 시 흔들림을 줄여줍니다."
       },
       {
-        image: "/image/weapons-add-on-rail-angled_fore_grip.png",
-        name: "앵글 손잡이",
-        desc: "조준 속도 증가",
-      },
+        "name": "수직 손잡이",
+        "image": "/image/weapons-add-on-rail-fore_grip.png",
+        "desc": "수직 반동을 크게 줄여줍니다."
+      }
     ],
     scope: [
       {
-        image: "/image/weapons-add-on-sights-red.png",
-        name: "레드 도트 사이트",
-        desc: "1배율 조준경",
+        "name": "레드 도트 사이트",
+        "image": "/image/weapons-add-on-sights-red.png",
+        "desc": "배율은 없지만 간략한 조준선으로 조준이 수월해집니다."
       },
       {
-        image: "/image/weapons-add-on-sights-holosight.png",
-        name: "홀로그램 사이트",
-        desc: "1배율 조준경",
+        "name": "홀로그램 조준기",
+        "image": "/image/weapons-add-on-sights-holosight.png",
+        "desc": "배율은 없지만 간략한 조준선으로 조준이 수월해집니다."
       },
       {
-        image: "/image/weapons-add-on-sights-aimpoint2X.png",
-        name: "2배율 스코프",
-        desc: "2배율 조준경",
+        "name": "2배율",
+        "image": "/image/weapons-add-on-sights-aimpoint2X.png",
+        "desc": "목표를 2배율로 확대합니다. 정조준 시간이 다소 증가합니다."
       },
       {
-        image: "/image/weapons-add-on-sights-aimpoint4X.png",
-        name: "4배율 스코프",
-        desc: "4배율 조준경",
+        "name": "3배율",
+        "image": "/image/weapons-add-on-sights-aimpoint3X.png",
+        "desc": "목표를 3배율로 확대합니다. 정조준 시간이 다소 증가합니다."
+      },
+      {
+        "name": "4배율",
+        "image": "/image/weapons-add-on-sights-aimpoint4X.png",
+        "desc": "목표를 4배율로 확대합니다. 정조준 시간이 다소 증가합니다."
+      },
+      {
+        "name": "6배율",
+        "image": "/image/weapons-add-on-sights-aimpoint6X.png",
+        "desc": "목표를 3~6배율로 확대합니다. 정조준 시간이 상당히 증가합니다."
       },
     ],
     magazine: [
       {
-        image: "/image/weapons-add-on-magazines-extended_large.png",
-        name: "대용량 탄창",
-        desc: "탄약 용량 증가",
+        "name": "퀵드로우 탄창",
+        "image": "/image/weapons-add-on-magazines-quickdraw_large.png",
+        "desc": "재장전 속도가 증가합니다."
       },
       {
-        image: "/image/weapons-add-on-magazines-quickdraw_large.png",
-        name: "퀵드로우 탄창",
-        desc: "재장전 속도 증가",
+        "name": "대용량 탄창",
+        "image": "/image/weapons-add-on-magazines-extended_large.png",
+        "desc": "탄창의 용량을 늘려줍니다."
+      },
+      {
+        "name": "대용량 퀵드로우 탄창",
+        "image": "/image/weapons-add-on-magazines-extended_quickdraw_large.png",
+        "desc": "재장전 속도와 탄창의 용량이 모두 증가합니다."
       },
     ],
     stock: [
       {
-        image: "/image/weapons-add-on-buttstock-composite.png",
-        name: "전술 개머리판",
-        desc: "반동 안정성 증가",
+        "name": "전술 개머리판",
+        "image": "/image/weapons-add-on-buttstock-composite.png",
+        "desc": "총기 반동을 감소시키고, 정조준 속도를 높여줍니다. 단발 사격 시, 반동 회복에 도움을 줍니다."
+      },
+      {
+        "name": "중량형 개머리판",
+        "image": "/image/weapons-add-on-buttstock-heavy.png",
+        "desc": "총기 반동을 감소시키고, 정조준 속도를 높여줍니다. 단발 사격 시, 반동 회복에 도움을 줍니다."
       },
     ],
   },
@@ -118,40 +142,79 @@ export const Sniper = {
   args: {
     category: "저격소총",
     weaponData: createWeaponData({
-      itemImage: "/image/KAR98K.png",
-      itemName: "Kar98k",
+      itemImage: "/image/M24.png",
+      itemName: "M24",
       gunParts: {
         bullet: [
           {
             image: "/image/762mm.png",
             name: "7.62mm",
-            desc: "7.62mm 탄환",
           },
         ],
         muzzle: [
           {
-            image: "/image/weapons-add-on-muzzle-suppressor_large.png",
-            name: "저격총 소음기",
-            desc: "총성 감소",
+            "name": "보정기(DMR, SR)",
+            "image": "/image/weapons-add-on-muzzle-compensator_sniperrifle.png",
+            "desc": "총기 반동을 크게 줄여주어 조준 제어에 도움을 줍니다."
+          },
+          {
+            "name": "소염기(DMR, SR)",
+            "image": "/image/weapons-add-on-muzzle-flashhider_sniperrifle.png",
+            "desc": "총구 화염과 총기 반동이 조금 줄어듭니다."
+          },
+          {
+            "name": "소음기(DMR, SR)",
+            "image": "/image/weapons-add-on-muzzle-suppressor_large.png",
+            "desc": "총구 화염이 사라지고, 총성을 줄여줍니다. 지향 사격 정확도가 상승합니다."
           },
         ],
         scope: [
           {
-            image: "/image/weapons-add-on-sights-aimpoint4X.png",
-            name: "4배율 스코프",
-            desc: "4배율 조준경",
+            "name": "레드 도트 사이트",
+            "image": "/image/weapons-add-on-sights-red.png",
+            "desc": "배율은 없지만 간략한 조준선으로 조준이 수월해집니다."
           },
           {
-            image: "/image/weapons-add-on-sights-aimpoint8X.png",
-            name: "8배율 스코프",
-            desc: "8배율 조준경",
+            "name": "홀로그램 조준기",
+            "image": "/image/weapons-add-on-sights-holosight.png",
+            "desc": "배율은 없지만 간략한 조준선으로 조준이 수월해집니다."
+          },
+          {
+            "name": "2배율",
+            "image": "/image/weapons-add-on-sights-aimpoint2X.png",
+            "desc": "목표를 2배율로 확대합니다. 정조준 시간이 다소 증가합니다."
+          },
+          {
+            "name": "3배율",
+            "image": "/image/weapons-add-on-sights-aimpoint3X.png",
+            "desc": "목표를 3배율로 확대합니다. 정조준 시간이 다소 증가합니다."
+          },
+          {
+            "name": "4배율",
+            "image": "/image/weapons-add-on-sights-aimpoint4X.png",
+            "desc": "목표를 4배율로 확대합니다. 정조준 시간이 다소 증가합니다."
+          },
+          {
+            "name": "6배율",
+            "image": "/image/weapons-add-on-sights-aimpoint6X.png",
+            "desc": "목표를 3~6배율로 확대합니다. 정조준 시간이 상당히 증가합니다."
+          },
+          {
+            "name": "8배율",
+            "image": "/image/weapons-add-on-sights-aimpoint8X.png",
+            "desc": "목표를 4~8배율로 확대합니다. 정조준 시간이 상당히 증가합니다."
+          },
+          {
+            "name": "15배율",
+            "image": "/image/weapons-add-on-sights-aimpoint15X.png",
+            "desc": "목표를 8~15배율로 확대합니다. 정조준 시간이 상당히 증가합니다."
           },
         ],
         stock: [
           {
-            image: "/image/weapons-add-on-buttstock-sniperrifle_cheekpad.png",
-            name: "칙 패드",
-            desc: "반동 안정성 증가",
+            "name": "칙패드",
+            "image": "/image/weapons-add-on-buttstock-sniperrifle_cheekpad.png",
+            "desc": "부착 시 수직 반동을 감소시키고 조준, 격발 시의 흔들림을 줄여줍니다."
           },
         ],
         grip: [],
@@ -165,42 +228,91 @@ export const Smg = {
   args: {
     category: "기관단총",
     weaponData: createWeaponData({
-      itemImage: "/image/UMP45.png",
-      itemName: "UMP45",
+      itemImage: "/image/MP5K.png",
+      itemName: "MP5K",
       gunParts: {
         bullet: [
           {
             image: "/image/9mm.png",
             name: "9mm",
-            desc: "9mm 탄환",
           },
         ],
         muzzle: [
           {
-            image: "/image/weapons-add-on-muzzle-compensator_medium.png",
-            name: "SMG 보정기",
-            desc: "반동 감소",
+            "name": "보정기(SMG)",
+            "image": "/image/weapons-add-on-muzzle-compensator_medium.png",
+            "desc": "총기 반동을 크게 줄여주어 조준 제어에 도움을 줍니다."
+          },
+          {
+            "name": "소염기(SMG)",
+            "image": "/image/weapons-add-on-muzzle-flashhider_medium.png",
+            "desc": "총구 화염과 총기 반동이 조금 줄어듭니다."
+          },
+          {
+            "name": "소음기(SMG)",
+            "image": "/image/weapons-add-on-muzzle-suppressor_small.png",
+            "desc": "총구 화염이 사라지고, 총성을 줄여줍니다. 지향 사격 정확도가 상승합니다."
           },
         ],
         grip: [
           {
-            image: "/image/weapons-add-on-rail-fore_grip.png",
-            name: "수직 손잡이",
-            desc: "수직 반동 감소",
+            "name": "앵글 손잡이",
+            "image": "/image/weapons-add-on-rail-angled_fore_grip.png",
+            "desc": "수평 반동과 호흡 시 흔들림을 줄여줍니다."
+          },
+          {
+            "name": "수직 손잡이",
+            "image": "/image/weapons-add-on-rail-fore_grip.png",
+            "desc": "수직 반동을 크게 줄여줍니다."
           },
         ],
         scope: [
           {
-            image: "/image/weapons-add-on-sights-red.png",
-            name: "레드 도트 사이트",
-            desc: "1배율 조준경",
+            "name": "레드 도트 사이트",
+            "image": "/image/weapons-add-on-sights-red.png",
+            "desc": "배율은 없지만 간략한 조준선으로 조준이 수월해집니다."
+          },
+          {
+            "name": "홀로그램 조준기",
+            "image": "/image/weapons-add-on-sights-holosight.png",
+            "desc": "배율은 없지만 간략한 조준선으로 조준이 수월해집니다."
+          },
+          {
+            "name": "2배율",
+            "image": "/image/weapons-add-on-sights-aimpoint2X.png",
+            "desc": "목표를 2배율로 확대합니다. 정조준 시간이 다소 증가합니다."
+          },
+          {
+            "name": "3배율",
+            "image": "/image/weapons-add-on-sights-aimpoint3X.png",
+            "desc": "목표를 3배율로 확대합니다. 정조준 시간이 다소 증가합니다."
+          },
+          {
+            "name": "4배율",
+            "image": "/image/weapons-add-on-sights-aimpoint4X.png",
+            "desc": "목표를 4배율로 확대합니다. 정조준 시간이 다소 증가합니다."
+          },
+          {
+            "name": "6배율",
+            "image": "/image/weapons-add-on-sights-aimpoint6X.png",
+            "desc": "목표를 3~6배율로 확대합니다. 정조준 시간이 상당히 증가합니다."
           },
         ],
         magazine: [
           {
-            image: "/image/weapons-add-on-magazines-extended_small.png",
-            name: "SMG 대용량 탄창",
-            desc: "탄약 용량 증가",
+            "name": "퀵드로우 탄창(권총, SMG)",
+            "image": "/image/weapons-add-on-magazines-quickdraw_small.png",
+            "desc": "재장전 속도가 증가합니다."
+          },
+          {
+            "name": "대용량 탄창(권총, SMG)",
+            "image": "/image/weapons-add-on-magazines-extended_small.png",
+            "desc": "탄창의 용량을 늘려줍니다."
+          },
+          {
+            "name": "대용량 퀵드로우 탄창(권총, SMG)",
+            "image": "/image/weapons-add-on-magazines-extended_quickdraw_small.png",
+            "desc": "재장전 속도와 탄창의 용량이 모두 증가합니다."
           },
         ],
         stock: [],
@@ -220,25 +332,55 @@ export const Pistol = {
           {
             image: "/image/9mm.png",
             name: "9mm",
-            desc: "9mm 탄환",
           },
         ],
         muzzle: [
           {
-            image: "/image/weapons-add-on-muzzle-suppressor_small.png",
-            name: "권총 소음기",
-            desc: "총성 감소",
+            "name": "보정기(SMG)",
+            "image": "/image/weapons-add-on-muzzle-compensator_medium.png",
+            "desc": "총기 반동을 크게 줄여주어 조준 제어에 도움을 줍니다."
+          },
+          {
+            "name": "소염기(SMG)",
+            "image": "/image/weapons-add-on-muzzle-flashhider_medium.png",
+            "desc": "총구 화염과 총기 반동이 조금 줄어듭니다."
+          },
+          {
+            "name": "소음기(SMG)",
+            "image": "/image/weapons-add-on-muzzle-suppressor_small.png",
+            "desc": "총구 화염이 사라지고, 총성을 줄여줍니다. 지향 사격 정확도가 상승합니다."
           },
         ],
         magazine: [
           {
-            image: "/image/weapons-add-on-magazines-extended_small.png",
-            name: "권총 대용량 탄창",
-            desc: "탄약 용량 증가",
+            "name": "퀵드로우 탄창(권총, SMG)",
+            "image": "/image/weapons-add-on-magazines-quickdraw_small.png",
+            "desc": "재장전 속도가 증가합니다."
+          },
+          {
+            "name": "대용량 탄창(권총, SMG)",
+            "image": "/image/weapons-add-on-magazines-extended_small.png",
+            "desc": "탄창의 용량을 늘려줍니다."
+          },
+          {
+            "name": "대용량 퀵드로우 탄창(권총, SMG)",
+            "image": "/image/weapons-add-on-magazines-extended_quickdraw_small.png",
+            "desc": "재장전 속도와 탄창의 용량이 모두 증가합니다."
           },
         ],
         grip: [],
-        scope: [],
+        scope: [
+          {
+            "name": "레드 도트 사이트",
+            "image": "/image/weapons-add-on-sights-red.png",
+            "desc": "배율은 없지만 간략한 조준선으로 조준이 수월해집니다."
+          },
+          {
+            "name": "홀로그램 조준기",
+            "image": "/image/weapons-add-on-sights-holosight.png",
+            "desc": "배율은 없지만 간략한 조준선으로 조준이 수월해집니다."
+          },
+        ],
         stock: [],
       },
     }),
